@@ -28,6 +28,9 @@ floatX = float32
 [cuda]
 root = /usr/local/cuda" > ~/.theanorc
 
+chown -R ubuntu /home/ubuntu/.theano
+chown -R 775 /home/ubuntu/.theano
+
 pip install keras
 mkdir ~/.keras
 echo '{
