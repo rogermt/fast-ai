@@ -28,10 +28,10 @@ floatX = float32
 [cuda]
 root = /usr/local/cuda" > ~/.theanorc
 
-chown -R ubuntu /home/ubuntu/.theano
-chown -R 775 /home/ubuntu/.theano
+sudo chown -R ubuntu /home/ubuntu/.theano
+sudo chown -R 775 /home/ubuntu/.theano
 
-pip install keras
+pip install keras==1.2.2
 mkdir ~/.keras
 echo '{
     "image_dim_ordering": "th",
